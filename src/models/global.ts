@@ -7,11 +7,11 @@ const useUser = () => {
     page: 1,
     size: 20,
     query: '',
-  })
+  });
 
   const handleLoadData = useCallback(() => {
-    console.log("load data", filter)
-  }, [filter])
+    console.log('load data', filter);
+  }, [filter]);
 
   // const handleLoadData = () => {
   //   console.log("load data", filter)
@@ -22,18 +22,17 @@ const useUser = () => {
   //   console.log("load data", filter)
   // }, [])
 
-
   const handleSubmit = useCallback(() => {
-    console.log(filter)
-    handleLoadData()
-  }, [filter])
+    console.log(filter);
+    handleLoadData();
+  }, [filter]);
 
   return {
     name,
     setName,
     filter,
     settFilter,
-    handleSubmit
+    handleSubmit,
   };
 };
 

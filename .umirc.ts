@@ -9,6 +9,12 @@ export default defineConfig({
   layout: {
     title: 'Umijs',
   },
+  dva: {
+    immer: {
+      enableES5: true,
+      enableAllPlugins: true,
+    },
+  },
   routes: [
     {
       path: '/',
@@ -22,4 +28,3 @@ export default defineConfig({
   ],
   npmClient: 'npm',
 });
-
